@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Scrollama: Sticky Side Example</title>
+    <meta name="description" content="Scrollama: Sticky Side Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #scrolly {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #151826;
+        padding: 1rem;
+      }
+
+      #scrolly > * {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      }
+
+      article {
+        position: relative;
+        padding: 0 1rem;
+        max-width: 40rem;
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        margin: 0;
+        background-color: #151826;
+        z-index: 0;
+        top: 1vh;
+        height: 1032px;
+        /* Center everything inside */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sticky-thing p {
+        padding: 1rem;
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+        background-color: #151826;
+      }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        background-color: #151826;
+        color: #151826;
+        height: 1032px
+      }
+
+      .step:last-child {
+        margin-bottom: 0;
+      }
+
+      .step.is-active {
+        background-color: #151826;
+        color: #8a8a8a;
+        height: 1032px
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 2.3rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      
+      <section id="intro">
+        <nav>
+          <img src="/img/DVC-Logo.png" width="181" height="67" alt="">
+          <div class="nav__examples">
+            <p></p>
+            <a href="index.html">Main</a>
+            <a href="about.html">About</a>
+            <!--<a href="c.html">Collateral</a>-->
+          </div>
+        </nav>
+        <introdiv>
+        <h1 class="intro__hed">Alimony Scenario Calculator</h1>
+        <p class="intro__dek">
+        </introdiv>
+          Determine how your daily living expenses <br> and savings may be affected by alimony payments.
+        </p>
+      </section>
+
+      <section id="scrolly">
+        <article>
+          <div class="step" data-step="1">
+            <p>Alimony payments will have a substantial impact on your ability to meet your daily expenses and preserve savings. As these payments can span years, it's important to anticipate monthly alimony costs alongside your daily expenses.  <br><br>The Alimony Scenario Calculator can provide guidance on different monthly alimony payments could impact your checking and savings accounts. The example calculator shows the impact of a $1,000, $1,500 and $2,000 payment across H1 2024 .</p>
+          </div>
+          <div class="step" data-step="2">
+            <p>First, pick the anticipated Alimony payment by using the 'Choose Alimony Scenario' option (upper right)  <br><br>.The monthly alimony payment is distributed across the date-range and debited alongide daily living expenses.  <br><br>The bar graphs depict checking and savings account balances for each day within the analysis date-range.</p>
+          </div>
+          <div class="step" data-step="3">
+            <p>You can see the daily and cumulative expenses for the analysis date-range in the table to the right of the visualization.  <br><br>The daily and cumulative expense totals will change depending upon the chosen 'alimony scenario' amount.  <br><br>The 'Daily Alimony' data row is tied to that choice while other daily credits and debits remain the same.</p>
+          </div>
+          <div class="step" data-step="4">
+            <p>The 'Start here' automation option on the lower right of the visualization will show the impact of all debits and credits against the checking and savings accounts depicted in the bar chart.  <br><br>Provided that all other debits and credits remain equal, you can determine the impact that each hypothetical alimony scenario could have on your ability to pay bills and preserve savings.</p>
+          </div>
+        </article>
+
+        <div class="sticky-thing">
+          <div class='tableauPlaceholder' id='viz1702257122543' style='position: relative'><noscript><a href='#'><img alt='Completed Dashboard (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Al&#47;AlimonyScenarioCalculator&#47;CompletedDashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AlimonyScenarioCalculator&#47;CompletedDashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Al&#47;AlimonyScenarioCalculator&#47;CompletedDashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1702257122543');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1309px';vizElement.style.height='1038px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </div>
+      </section>
+
+      <section id="outro">
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      It's important to know your ability to cover proposed future financial committments, such as alimony, going into a mediation session.  Working out different financial scenarios in advance of mediation will put you in the best position possible to discuss terms that you'll be able to financially commit to.  <br><br>
+      The DVC can help you create visual exhibits that can be used in discussions with lawyers prior to a mediation, or in a mediated session.  A visual representation of such details can provide "eye-opening" insight into your argument and show that your position is the most pragmatic and obvious way forward.<br><br> 
+      Ask us how we can create a visualization to help aide you in an upcoming mediation or settlement.
+      </section>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section id="ending">
+      <logo1><img src="/img/BBB.png" alt="Better Business Bureau"></logo1>
+      <logo2><img src="/img/DVS.png" alt="Data Visualization Society"></logo2>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+    </main>
+
+    <!-- <div class='debug'></div> -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
+      // using d3 for convenience
+      var main = document.querySelector("main");
+      var scrolly = main.querySelector("#scrolly");
+      var sticky = scrolly.querySelector(".sticky-thing");
+      var article = scrolly.querySelector("article");
+      var steps = article.querySelectorAll(".step");
+
+      // initialize the scrollama
+      var scroller = scrollama();
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+        // response = { element, direction, index }
+        var el = response.element;
+
+        // remove is-active from all steps
+        // then add is-active to this step
+        steps.forEach(step => step.classList.remove('is-active'));
+        el.classList.add('is-active');
+
+        // update graphic based on step
+        sticky.querySelector("p").innerText = el.dataset.step;
+      }
+
+      function init() {
+        scroller
+          .setup({
+            step: "#scrolly article .step",
+            offset: 0.5,
+            debug: false
+          })
+          .onStepEnter(handleStepEnter);
+
+        // setup resize event
+        window.addEventListener("resize", scroller.resize);
+      }
+
+      // kick things off
+      init();
+    </script>
+  </body>
+</html>
