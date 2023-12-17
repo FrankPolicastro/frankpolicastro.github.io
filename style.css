@@ -187,8 +187,8 @@ a:hover {
   flex-direction: row;
   justify-content: space-evenly;
   margin: 35px;
-  border: 2px solid grey;
-  border-radius: 25px;
+  /*border: 2px solid grey;
+  border-radius: 25px;*/
  }
 
  #flexCont1 > fleximage {
@@ -207,8 +207,8 @@ a:hover {
   flex-direction: row;
   justify-content: space-evenly;
   margin: 35px;
-  border: 2px solid grey;
-  border-radius: 25px;
+  /*border: 2px solid grey;
+  border-radius: 25px;*/
  }
 
  #flexCont2 > fleximage {
