@@ -182,43 +182,55 @@ a:hover {
    background: #151826;
    height: 20vh;
  }
+
+ #titles {
+  text-align: center;
+  font-size: 42px;
+ }
+
  #flexCont1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 35px;
   /*border: 2px solid grey;
   border-radius: 25px;*/
  }
-
+ 
  #flexCont1 > fleximage {
-  border: 50px solid grey;;
+  border: 50px solid #151826;
   border-radius: 25px;
+  margin: auto;
  } 
 
  #flexCont1 > flextext {
-  max-width: 600px;
+  max-width: 675px;
   text-align: center;
+  border: 50px solid #151826;
   font-size: 28px;
+  margin: auto;
  }
 
  #flexCont2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 35px;
   /*border: 2px solid grey;
   border-radius: 25px;*/
  }
 
  #flexCont2 > fleximage {
-  border: 50px solid grey;;
+  border: 50px solid #151826;
   border-radius: 25px;
+  margin: auto;
  } 
 
  #flexCont2 > flextext {
-  max-width: 600px;
+  max-width: 675px;
   text-align: center;
+  border: 50px solid #151826;
   font-size: 28px;
+  margin: auto;
  }
  
