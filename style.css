@@ -118,6 +118,15 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 1400px) {
+  #flexCont1 {
+    flex-direction: column;
+  }
+  #flexCont2 {
+    flex-direction: column;
+  }
+}
+
 * {
   box-sizing: border-box; 
  }
