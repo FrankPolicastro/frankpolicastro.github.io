@@ -186,13 +186,17 @@ a:hover {
  #titles {
   text-align: center;
   font-size: 42px;
+  font-weight: bold;
+  
  }
 
  #flexCont1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 35px;
+  margin-left: 35px;
+  margin-bottom: 35px;
+  margin-right: 35px;
   /*border: 2px solid grey;
   border-radius: 25px;*/
  }
@@ -207,6 +211,7 @@ a:hover {
   max-width: 675px;
   text-align: center;
   border: 50px solid #151826;
+  font-weight: 400;
   font-size: 28px;
   margin: auto;
  }
@@ -215,7 +220,9 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 35px;
+  margin-left: 35px;
+  margin-bottom: 35px;
+  margin-right: 35px;
   /*border: 2px solid grey;
   border-radius: 25px;*/
  }
@@ -230,6 +237,7 @@ a:hover {
   max-width: 675px;
   text-align: center;
   border: 50px solid #151826;
+  font-weight: 400;
   font-size: 28px;
   margin: auto;
  }
