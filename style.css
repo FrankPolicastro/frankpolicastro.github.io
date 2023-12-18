@@ -1,6 +1,6 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 html,
 body {
@@ -30,20 +30,24 @@ a {
 a,
 a:visited,
 a:hover {
-  color: teal;
+  color: #151826;
   text-decoration: none;
-  border-bottom: 2px solid currentColor;
 }
 
 #intro {
   display: flex;
-  flex-direction: column;
-  margin: 1rem auto;
-  text-align: left;
+  flex-direction: row;
+  /*margin: 2rem auto;*/
+  justify-content: space-between;
+  background: #8a8a8a;
+}
+
+#intro > navb {
+  background: #8a8a8a;
+  margin: 1rem;
 }
 
 #intro > nav {
-  position:fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +67,26 @@ a:hover {
 #intro > introdiv {
   display: flex;
   flex-direction: column;
+  align-self: center;
   text-align: center;
+  background-color: #8a8a8a;
+  color: #151826;
+}
+
+#intro > navLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  margin: 2rem;
+  background-color: #8a8a8a;
+  color: #151826;
+}
+
+#intro > navLinks a{
+  margin-left: 12px;
+  margin-right: 12px;
+  text-decoration: underline;
 }
 
 .nav__examples {
@@ -80,12 +103,13 @@ a:hover {
 
 .nav__examples > * {
   margin-right: 0.5rem;
+  position: fixed;
 }
 
 .intro__hed {
   font-size: 2em;
-  margin: 2rem auto 0.5rem auto;
-  color: #8a8a8a;
+  margin: 0rem auto 0rem auto;
+  color: #151826;
 }
 
 .intro__dek {
@@ -93,7 +117,7 @@ a:hover {
 }
 
 #intro {
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 
 #outro {
@@ -118,9 +142,10 @@ a:hover {
   }
 }
 
-* {
+/* * {
   box-sizing: border-box; 
- }
+ }*/
+
  body {
    margin: 50;
    background: #151826;
@@ -250,4 +275,8 @@ a:hover {
   #flexCont2 {
     flex-direction: column;
   }
+  #intro > navLinks {
+    flex-direction: column;
+  }
 }
+
