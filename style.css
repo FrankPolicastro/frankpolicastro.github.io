@@ -1,6 +1,6 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 html,
 body {
@@ -30,20 +30,30 @@ a {
 a,
 a:visited,
 a:hover {
-  color: teal;
+  color: #151826;
   text-decoration: none;
-  border-bottom: 2px solid currentColor;
 }
 
 #intro {
   display: flex;
-  flex-direction: column;
-  margin: 1rem auto;
-  text-align: left;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  /*margin: 2rem auto;*/
+  justify-content: space-between;
+  background: #8a8a8a;
+  z-index: 99;
+}
+
+#intro > navb {
+  background: #8a8a8a;
+  margin: 1rem;
+  color:#151826;
+  font-size: 15px;
+  z-index: 100;
 }
 
 #intro > nav {
-  position:fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +73,30 @@ a:hover {
 #intro > introdiv {
   display: flex;
   flex-direction: column;
+  align-self: center;
   text-align: center;
+  background-color: #8a8a8a;
+  color: #151826;
+}
+
+#intro > navLinks {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: #8a8a8a;
+  color: #151826;
+}
+
+#intro > navLinks a {
+  margin-left: 12px;
+  margin-right: 12px;
+  text-decoration: underline;
 }
 
 .nav__examples {
@@ -80,12 +113,14 @@ a:hover {
 
 .nav__examples > * {
   margin-right: 0.5rem;
+  position: fixed;
 }
 
 .intro__hed {
-  font-size: 2em;
-  margin: 2rem auto 0.5rem auto;
-  color: #8a8a8a;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0rem auto 0rem auto;
+  color: #151826;
 }
 
 .intro__dek {
@@ -93,7 +128,7 @@ a:hover {
 }
 
 #intro {
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 
 #outro {
@@ -118,9 +153,10 @@ a:hover {
   }
 }
 
-* {
+/* * {
   box-sizing: border-box; 
- }
+ }*/
+
  body {
    margin: 50;
    background: #151826;
@@ -180,19 +216,23 @@ a:hover {
    font-size: 32px;
    color: #8a8a8a;
    background: #151826;
-   height: 20vh;
+   height: 8vh;
  }
 
- #titles {
+ #titles1 {
   text-align: center;
   font-size: 42px;
+  font-weight: bold;
+  
  }
 
  #flexCont1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 35px;
+  margin-left: 35px;
+  margin-bottom: 35px;
+  margin-right: 35px;
   /*border: 2px solid grey;
   border-radius: 25px;*/
  }
@@ -207,15 +247,24 @@ a:hover {
   max-width: 675px;
   text-align: center;
   border: 50px solid #151826;
+  font-weight: 400;
   font-size: 28px;
   margin: auto;
  }
 
+ #titles2 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  
+ }
  #flexCont2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 35px;
+  margin-left: 35px;
+  margin-bottom: 35px;
+  margin-right: 35px;
   /*border: 2px solid grey;
   border-radius: 25px;*/
  }
@@ -230,10 +279,27 @@ a:hover {
   max-width: 675px;
   text-align: center;
   border: 50px solid #151826;
+  font-weight: 400;
   font-size: 28px;
   margin: auto;
  }
 
+ #foots {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+  
+ #foots > legal {
+  font-size: 18px;
+  align-self: flex-end;
+ }
+
+ #foots > logo2 {
+  font-size: 15px;
+  align-self: flex-end;
+ }
+ 
  /* Media Detection */
  @media (max-width: 1400px) {
   #flexCont1 {
@@ -242,4 +308,8 @@ a:hover {
   #flexCont2 {
     flex-direction: column;
   }
+  #intro > navLinks {
+    flex-direction: column;
+  }
 }
+
