@@ -13,7 +13,7 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        background-color: #151826;
+        background-color: #15182600;
         padding: 1rem;
       }
 
@@ -34,9 +34,8 @@
         position: sticky;
         width: 100%;
         margin: 0;
-        background-color: #151826;
-        z-index: 0;
-        top: 1vh;
+        background-color: #15182600;
+        top: 12.7vh;
         height: 1032px;
         /* Center everything inside */
         display: flex;
@@ -56,7 +55,9 @@
         margin: 0 auto 2rem auto;
         background-color: #151826;
         color: #151826;
-        height: 1032px
+        height: 1032px;
+        visibility: hidden;
+
       }
 
       .step:last-child {
@@ -64,15 +65,18 @@
       }
 
       .step.is-active {
-        background-color: #151826;
+        background-color: #15182600;
         color: #8a8a8a;
-        height: 1032px
+        height: 1032px;
+        display: table-cell;
+        vertical-align: middle;
+        visibility: visible;
       }
 
       .step p {
         text-align: center;
         padding: 1rem;
-        font-size: 2.3rem;
+        font-size: 28px;
       }
     </style>
   </head>
@@ -80,28 +84,27 @@
   <body>
     <main>
       
-      <section id="intro">
-        <nav>
-          <img src="/img/DVC-Logo.png" width="181" height="67" alt="">
-          <div class="nav__examples">
-            <p></p>
-            <a href="index.html">Main</a>
-            <a href="about.html">About</a>
-            <!--<a href="c.html">Collateral</a>-->
-          </div>
-        </nav>
+      <div id="intro">
+        <navb>
+          <img src="/img/DVC-Logo-151826.png" width="181" height="67" alt=""><br>
+          Data Visualization Consulting
+        </navb>
         <introdiv>
-        <h1 class="intro__hed">Alimony Scenario Calculator</h1>
-        <p class="intro__dek">
+        <h1 class="intro__hed">Visual aids to help during court mediation</h1>
+        
         </introdiv>
-          Determine how your daily living expenses <br> and savings may be affected by alimony payments.
-        </p>
-      </section>
+        <navLinks>
+          
+          <a href="index.html">Main</a>
+          <a href="about.html">About</a>
+          <!--<a href="c.html">Collateral</a>-->
+        </navLinks>
+      </div>
 
       <section id="scrolly">
         <article>
           <div class="step" data-step="1">
-            <p>Alimony payments will have a substantial impact on your ability to meet your daily expenses and preserve savings. As these payments can span years, it's important to anticipate monthly alimony costs alongside your daily expenses.  <br><br>The Alimony Scenario Calculator can provide guidance on different monthly alimony payments could impact your checking and savings accounts. The example calculator shows the impact of a $1,000, $1,500 and $2,000 payment across H1 2024 .</p>
+            <p><br><br><br>Alimony payments will have a substantial impact on your ability to meet your daily expenses and preserve savings. As these payments can span years, it's important to anticipate monthly alimony costs alongside your daily expenses.  <br><br>The Alimony Scenario Calculator can provide guidance on different monthly alimony payments could impact your checking and savings accounts. The example calculator shows the impact of a $1,000, $1,500 and $2,000 payment across H1 2024 .</p>
           </div>
           <div class="step" data-step="2">
             <p>First, pick the anticipated Alimony payment by using the 'Choose Alimony Scenario' option (upper right)  <br><br>.The monthly alimony payment is distributed across the date-range and debited alongide daily living expenses.  <br><br>The bar graphs depict checking and savings account balances for each day within the analysis date-range.</p>
@@ -120,17 +123,22 @@
       </section>
 
       <section id="outro">
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br>
       It's important to know your ability to cover proposed future financial committments, such as alimony, going into a mediation session.  Working out different financial scenarios in advance of mediation will put you in the best position possible to discuss terms that you'll be able to financially commit to.  <br><br>
       The DVC can help you create visual exhibits that can be used in discussions with lawyers prior to a mediation, or in a mediated session.  A visual representation of such details can provide "eye-opening" insight into your argument and show that your position is the most pragmatic and obvious way forward.<br><br> 
       Ask us how we can create a visualization to help aide you in an upcoming mediation or settlement.
       </section>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <section id="ending">
       <logo1><img src="/img/BBB.png" alt="Better Business Bureau"></logo1>
       <logo2><img src="/img/DVS.png" alt="Data Visualization Society"></logo2>
       <br><br><br><br><br><br><br><br><br><br><br><br>
     </section>
+    <footer id ="foots">
+      <legal>© 2023 Data Visualization Consulting. See Privacy, Terms and Information Collection Notice</legal>
+      <logo2><img src="/img/DVC-Logo.png" width="181" height="67" alt=""><br>
+        Data Visualization Consulting</logo2>
+    </footer>
     </main>
 
     <!-- <div class='debug'></div> -->

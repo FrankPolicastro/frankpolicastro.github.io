@@ -37,14 +37,20 @@ a:hover {
 #intro {
   display: flex;
   flex-direction: row;
+  position: fixed;
+  width: 100%;
   /*margin: 2rem auto;*/
   justify-content: space-between;
   background: #8a8a8a;
+  z-index: 99;
 }
 
 #intro > navb {
   background: #8a8a8a;
   margin: 1rem;
+  color:#151826;
+  font-size: 15px;
+  z-index: 100;
 }
 
 #intro > nav {
@@ -76,14 +82,18 @@ a:hover {
 #intro > navLinks {
   display: flex;
   flex-direction: row;
+  align-self: flex-end;
   justify-content: space-between;
   text-align: center;
-  margin: 2rem;
+  margin-bottom: 10px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   background-color: #8a8a8a;
   color: #151826;
 }
 
-#intro > navLinks a{
+#intro > navLinks a {
   margin-left: 12px;
   margin-right: 12px;
   text-decoration: underline;
@@ -107,7 +117,8 @@ a:hover {
 }
 
 .intro__hed {
-  font-size: 2em;
+  font-size: 40px;
+  font-weight: 500;
   margin: 0rem auto 0rem auto;
   color: #151826;
 }
@@ -205,10 +216,10 @@ a:hover {
    font-size: 32px;
    color: #8a8a8a;
    background: #151826;
-   height: 20vh;
+   height: 8vh;
  }
 
- #titles {
+ #titles1 {
   text-align: center;
   font-size: 42px;
   font-weight: bold;
@@ -241,6 +252,12 @@ a:hover {
   margin: auto;
  }
 
+ #titles2 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  
+ }
  #flexCont2 {
   display: flex;
   flex-direction: row;
@@ -267,6 +284,22 @@ a:hover {
   margin: auto;
  }
 
+ #foots {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+  
+ #foots > legal {
+  font-size: 18px;
+  align-self: flex-end;
+ }
+
+ #foots > logo2 {
+  font-size: 15px;
+  align-self: flex-end;
+ }
+ 
  /* Media Detection */
  @media (max-width: 1400px) {
   #flexCont1 {
